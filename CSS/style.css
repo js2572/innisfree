@@ -1,0 +1,532 @@
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+        * { margin: 0; padding: 0;}
+        li { list-style: none;}
+        a { text-decoration: none; display: block; color: #333;font-family: 'Nanum Gothic', sans-serif;}
+        img { width: 100%;}
+        body { background-color: white; font-family: 'Nanum Gothic', sans-serif;}
+        wrap {
+            width: 100%;
+
+        }
+        header, section, footer {
+            width: 100%;
+            float: left;
+        }
+        .box_center {
+            width: 1280px;
+            margin: 0 auto;
+        }    
+header {
+    border-top: 3px solide #216127;
+
+}
+header .box center {
+    
+    height: 130px;
+    
+}
+
+/*헤더의 sns아이콘*/
+header .h_sns {
+   
+    float: left;
+     padding-top: 40px;
+}
+header .h_sns ul li {
+    width: 40px;
+    float: left;
+    margin: 5px;
+}
+
+/*로고*/
+header .logo {
+    width: 120px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -50px; /*-(width/2)*/
+}
+/*custom*/
+header .custom {
+    float: right;
+    margin-top: 50px;
+}
+
+header .custom ul li {
+    float: left;
+    width: 20px;
+    margin: 10px;
+    line-height: 20px;
+    
+}
+header .custom ul li a {
+    font-size: 12px;
+    color: #fff;
+}
+
+/*메뉴영역*/
+header .navi {
+    clear: both;
+    width: 100%;
+    height: 40px;
+    border-top: solid #fff;
+    border-bottom: solid #fff;
+}
+
+header .navi .navi_in {
+    width: 1280px;
+    margin: auto;
+    
+}
+
+header .navi .navi_in .navi_left {
+    float: left;
+}
+
+header .navi .navi_in .navi_left ul li {
+    float: left;
+    margin: 0px 0;
+}
+
+header .navi .navi_in .navi_left ul li a {
+    font-size: 12px;
+    padding: 40px;margin-right: 40px;
+}
+
+header .navi .navi_in nav {
+    float: right;
+    z-index: 10;
+    position: relative;
+}
+
+/*주메뉴*/
+header .navi .navi_in nav > ul > li {
+    float: left;
+}
+
+header .navi .navi_in nav > ul > li > a {
+    padding: 40px 75px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*주메뉴에 마우스 올렸을 때 글자색 변경*/
+header .navi .navi_in nav > ul > li > a:hover {
+    color: #fdc23e;
+}
+
+
+/*서브메뉴*/
+header .navi .navi_in nav .sub {
+    padding: 20px 0;
+    display: none;
+}
+
+header .navi .navi_in nav .sub li a {
+    font-size: 12px;
+    text-align: center;
+    padding: 7px;
+}
+header .navi .navi_in nav .sub li a:hover {
+    color: #7dc33e;
+}
+
+
+/*서브메뉴 배경*/
+header .navi .sub_bg {
+    display: none;
+    background-color: wheat;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 170px;
+    left: 0;
+    z-index: 5;
+    
+}
+
+header .navi .sub_bg img {
+    width: 160px;
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    top: 60px;
+}
+
+/*슬라이드*/
+.slide {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    
+}
+.slide ul li {
+    position: absolute;
+}
+
+.slide > a {
+    position: absolute;
+    width: 80px;
+    top: 50%;
+    margin-top: -40px; /*-(height/2)*/
+}
+
+.slide .prev {
+    left: 0;
+}
+
+.slide .next {
+    right: 0;
+}
+
+/*각 section안의 h1제목*/
+h1 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+/*event*/
+.event ul li {
+    float: left;
+    margin-right:20px;
+    width: 305px;
+    margin-bottom: 80px;
+}
+.event ul li:last-child {
+    margin-right: 0;
+}
+.event ul li .des {
+    margin-top: 20px;
+}
+
+.event ul li .des img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.event ul li .des h3 {
+    font-size: 12px;
+    color: #999;
+    line-height: 40px;
+}
+
+.event ul li p {
+    font-size: 16px;
+    line-height: 34px;
+}
+
+.event ul li span {
+    font-size: 12px;
+    color: #999;
+}
+
+/*메뉴*/
+.menu {
+    width: 100%;
+
+}
+
+.menu .menu_in {
+    width: 100%;
+    height: 890px;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu .menu_in .box_center {
+    position: relative;
+}
+
+.menu .menu_in h1 {
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: left;
+}
+.menu .menu_in h2 {
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: right;
+}
+
+.menu .menu_in p {
+    color: #000000;
+    font-size: 14px;
+}
+
+.menu .menu_in .m6_p {
+    text-align: right;
+}
+
+.menu .menu_in a {
+    width: 100px;
+    margin-top: 10px;
+}
+
+.menu .menu_in a img {
+    float: left;
+    width: 30px;
+}
+
+.menu .menu_in a span {
+    float: left;
+    margin-top: 7px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.menu .menu_in .m1 {
+    position: absolute;
+    width: 390px;
+    height: 300px;
+    background-color: white;
+    left: 418px;
+    box-shadow: 5px 5px 5px #999;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.menu .menu_in .m1 > img {
+    width: 190px;
+    position: absolute;
+    top:60px;
+    left: 188px;
+}
+
+.menu .menu_in .m2 {
+    position: absolute;
+    width: 255px;
+    height: 470px;
+    background-color: white;
+    left: 830px;
+    box-shadow: 5px 5px 5px #999;
+        padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.menu .menu_in .m2 > img {
+    width: 200px;
+    position: absolute;
+    top:100px;
+    left: 114px;
+}
+
+.menu .menu_in .m3 {
+    position: absolute;
+    width: 230px;
+    height: 360px;
+    background-color: white;
+    top: 332px;
+    left: 215px;
+        box-shadow: 5px 5px 5px #999;
+        padding: 20px;
+    box-sizing: border-box;
+}
+
+.menu .menu_in .m3 > img {
+    width: 76px;
+    position: absolute;
+    top:146px;
+    left: 80px;
+}
+
+.menu .menu_in .m4 {
+    position: absolute;
+    width: 330px;
+    height: 290px;
+    background-color: white;
+    top: 332px;
+    left: 478px;
+    box-shadow: 5px 5px 5px #999;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.menu .menu_in .m4 > img {
+    width: 141px;
+    position: absolute;
+    top:120px;
+    left: 160px;
+}
+
+.menu .menu_in .m5 {
+    position: absolute;
+    width: 270px;
+    height: 180px;
+    background-color: white;
+    top: 500px;
+    right: 180px;
+    box-shadow: 5px 5px 5px #999;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.menu .menu_in .m5 > img {
+    width: 180px;
+    position: absolute;
+    top:100px;
+    left: 140px;
+}
+
+.menu .menu_in .m6 {
+    position: absolute;
+    width: 330px;
+    height: 180px;
+    background-color: white;
+    top: 650px;
+    left: 478px;
+    box-shadow: 5px 5px 5px #999;
+        padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.menu .menu_in .m6 > img {
+    width: 204px;
+    position: absolute;
+    top:21px;
+    left: 10px;
+}
+
+/*매장 찾기의 배달*/
+
+.store .box_center div {
+    float: left;
+    width: 640px;
+}
+
+
+/*SNS*/
+.sns ul {
+    width: 500px;
+    margin: 0 auto
+    
+}
+.sns ul li {
+    width: 60px;
+    float: left;
+    margin: 15px;
+}
+
+/*인스타그램*/
+.insta ul li {
+    width: 410px;
+    float: left;
+    margin: 5px;
+}
+
+.insta h1 {
+    color: #666;
+    position: relative;
+}
+
+.insta h1:before {
+    content: "";
+    width: 520px;
+    height: 1px;
+    background-color: #666;
+    position: absolute;
+    left: 0px;
+    top: 13px;
+}
+
+.insta h1:after {
+    content: "";
+    width: 520px;
+    height: 1px;
+    background-color: #666;
+    position: absolute;
+    right: 0px;
+    top: 13px;
+}
+
+/*footer*/
+
+footer {
+    margin-top: 120px;
+    height: 330px;
+    padding: 50px 0;
+    border-top: 1px solid #53a451;
+}
+
+footer .info ul li {
+    float: left;
+    margin: 30px;
+}
+
+footer .info ul li a {
+    padding: 7px 10px;
+    font-size: 14px;
+}
+
+footer .info ul li a:after {
+    content: "|"; /*파이프 이호 shift : w*/
+    float: right;
+    margin-left: 50px;
+    color: #666;
+}
+
+/*3번째 li의 자식개체 a태그 스타일*/
+footer .info ul li:nth-child(2) a {
+    font-weight: bold;
+    color: black;
+}
+/*마지막 li의 자식객체 a태그 오른쪽의 ㅣ 삭제*/
+footer .info ul li:last-child:after {
+    content: "";
+    margin-left: 0;
+}
+
+
+footer .f_logo {
+    width: 100px;
+    margin: auto;
+    padding-top: 30px;
+    clear: both;
+    margin-bottom: 30px;
+}
+
+footer address {
+    font-style: normal;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+
+footer p{
+    text-align: center;
+    font-size: 12px;
+    line-height: 50px;
+    color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
