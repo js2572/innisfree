@@ -232,7 +232,7 @@ h1 {
 .menu .menu_in {
     width: 100%;
     height: 890px;
-    background-image: url(../img/bg.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/js2572/innisfree//img/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
